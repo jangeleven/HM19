@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm19 : Javascript object</title>
+    <style></style>
+    <script>
+      var now = new Date();
+      var student = {
+        id: "hm19",
+        name: "장원일",
+        hobby: "게임",
+        height: "181",
+        grade: "3.5",
+        number: "010-35xx-32xx",
+        home: "Busan",
+        birthyear: 2000,
+        birthmonth: 01,
+        birthday: 25
+      };
+    </script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h3>hm19 리터럴 표기법으로 사용자 객체 만들기</h3>
+    <hr />
+    <script>
+      document.write("id : " + student.id + "<br>");
+      document.write("name : " + student.name + "<br>");
+      document.write("grage : " + student.grade + "<br>");
+      document.write("number : " + student.number + "<br>");
+      document.write(
+        "birthday : " +
+          student.birthyear +
+          " - " +
+          student.birthmonth +
+          " - " +
+          student.birthday +
+          "<br>"
+      );
+      document.write("hobby : "+ student.hobby + "<br>");
+      document.write("height : "+ student.height +"<br>")
+      document.write("home : "+ student.home + "<br>")
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm19 : Javascript BOM</title>
+    <style></style>
+
+    <script>
+      function load() {
+        var select = document.getElementById("site");
+        window.location = select.options[select.selectedIndex].value;
+      }
+    </script>
+  </head>
+  <body>
+    <h3>hm19의 요즘 듣고 있는 Best 3 노래</h3>
+    <hr />
+    노래 선택
+    <select id="site">
+      <option>선택하시오 </option>
+
+      <option style="background-image:'media/영어.png';"
+        value="https://www.melon.com/song/detail.htm?songId=33059002"
+        >John K - parachute </option>
+        <option
+        value="https://www.melon.com/song/detail.htm?songId=30434161"
+        >규현 - 다시 만나는 날 </option>
+        <option
+        value="https://www.melon.com/song/detail.htm?songId=33133800"
+        >래원(Layone) - iii
+      </option></select>
+
+    <p>
+      <button onclick="load()">들으러 가기</button>
+    </p>
+  </body>
+</html>

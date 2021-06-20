@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        @font-face { font-family: 'font'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff'); font-weight: normal; font-style: normal; }
+        h1 {
+            font-family: 'font', sans-serif;
+            font-size: 25px;
+        }
+        html {
+            text-align: center;
+        }
+        input {
+            width: 80%;
+            height: 50px;
+            border: 2px solid black;
+            padding-left: 10px;
+        }
+        #id_ {
+            font-size: 20px;
+        }
+        #pass_ {
+            font-size: 20px;
+        }
+        #button {
+            width: 200px;
+            height: 75px;
+            background-color: green;
+            color: white;
+            font-size: 30px;
+            font-family: 'font', sans-serif;
+            transition-duration: 0.5s;
+            cursor: pointer;
+        }
+        #button:hover {
+            background-color:lightgreen;
+        }
+    </style>
+    <script>
+        function login(){
+            var link = "hm19_main.html";
+            location.href = link;
+        }
+        
+    </script>
+</head>
+<body>
+    <h1 style="font-size: 4em;">로그인</h1>
+
+    <h1>사용자 아이디</h1>
+
+    <form id="idform">
+        <input type="id" name="id" id="id_" placeholder="아이디를 입력해주세요 ex)HMOO">
+    </form>
+
+    <h1>패스워드</h1>
+
+    <form id="passform">
+        <input type="password" name="pass" id="pass_" placeholder="비밀번호를 입력해주세요 (초기비밀번호는 아이디와 동일합니다.)">
+    </form>
+    <br>
+    <br>
+    
+    <button id="button">로그인</button>
+
+
+    <script>
+        document.getElementById('button').onclick = function() {
+            var ID = document.getElementById('id_').value;
+            var pass = document.getElementById('pass_').value;
+            if (ID === "HM00" && pass === "HM00") {
+                alert("HM00님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM01" && pass === "HM01") {
+                alert("HM01님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM02" && pass === "HM02") {
+                alert("HM02님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM03" && pass === "HM03") {
+                alert("HM03님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM04" && pass === "HM04") {
+                alert("HM04님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM05" && pass === "HM05") {
+                alert("HM05님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM06" && pass === "HM06") {
+                alert("HM06님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM07" && pass === "HM07") {
+                alert("HM07님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM08" && pass === "HM08") {
+                alert("HM08님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM09" && pass === "HM09") {
+                alert("HM09님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM10" && pass === "HM10") {
+                alert("HM10님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM11" && pass === "HM11") {
+                alert("HM11님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM12" && pass === "HM12") {
+                alert("HM12님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM13" && pass === "HM13") {
+                alert("HM13님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM14" && pass === "HM14") {
+                alert("HM14님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM15" && pass === "HM15") {
+                alert("HM15님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM16" && pass === "HM16") {
+                alert("HM16님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM17" && pass === "HM17") {
+                alert("HM17님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM18" && pass === "HM18") {
+                alert("HM18님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM19" && pass === "HM19") {
+                alert("HM19님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM20" && pass === "HM20") {
+                alert("HM20님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM21" && pass === "HM21") {
+                alert("HM21님 환영합니다.");
+                login();
+            }
+            else if (ID === "HM22" && pass === "HM22") {
+                alert("HM22님 환영합니다.");
+                login();
+            }
+            else {
+                alert("아이디가 존재하지 않거나 비밀번호가 틀렸습니다.");
+            }
+        }
+    </script>
+</body>
+</html>

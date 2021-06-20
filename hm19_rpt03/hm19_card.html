@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm19 : Christmas Card</title>
+		<style>
+			audio{
+				z-index:50;
+				display:inline-block;
+				position:absolute;
+				left:400px;
+				top:910px;
+				width:650px;
+			}
+			#HM{
+				z-index:31;
+				display: inline-block; /* div의 자식 p */
+				position: absolute; /* 절대 배치 */
+				height: 38px;
+				width: 150px;
+				background:yellow;
+				padding:4px;
+				
+			}
+			#M{
+				z-index:31;
+				display: inline-block; /* div의 자식 p */
+				position: absolute; /* 절대 배치 */
+				height: 40px;
+				width: 35px;
+				color:white;
+				text-shadow:5px 5px black;
+			}
+			#M:hover{
+				transform:rotate(30deg);
+			}
+			#E{
+				z-index:31;
+				display: inline-block; /* div의 자식 p */
+				position: absolute; /* 절대 배치 */
+				height: 40px;
+				width: 35px;
+				color:white;
+				text-shadow:5px 5px black;
+			}
+			#E:hover{
+				transform:rotate(-30deg);
+			}
+			#R{
+				z-index:31;
+				display: inline-block; /* div의 자식 p */
+				position: absolute; /* 절대 배치 */
+				height: 40px;
+				width: 35px;
+				color:white;
+				text-shadow:5px 5px black;
+			}
+			#R:hover{
+				transform:rotate(30deg);
+			}
+			#R2{
+				z-index:31;
+				display: inline-block; /* div의 자식 p */
+				position: absolute; /* 절대 배치 */
+				height: 40px;
+				width: 35px;
+				color:white;
+				text-shadow:5px 5px black;
+			}
+			#R2:hover{
+				transform:rotate(-30deg);
+			}
+			#Y{
+				z-index:31;
+				display: inline-block; /* div의 자식 p */
+				position: absolute; /* 절대 배치 */
+				height: 40px;
+				width: 35px;
+				color:white;
+				text-shadow:5px 5px black;
+			}
+			#Y:hover{
+				transform:rotate(30deg);
+			}
+			#X{
+				z-index:31;
+				display: inline-block; /* div의 자식 p */
+				position: absolute; /* 절대 배치 */
+				height: 40px;
+				width: 35px;
+				color:white;
+				text-shadow:5px 5px black;
+			}
+			#X:hover{
+				transform:rotate(-30deg);
+			}
+			#ba{
+				z-index:31;
+				display: inline-block; /* div의 자식 p */
+				position: absolute; /* 절대 배치 */
+				height: 40px;
+				width: 35px;
+				color:white;
+				text-shadow:5px 5px black;
+			}
+			#ba:hover{
+				transform:rotate(30deg);
+			}
+			#M2{
+				z-index:31;
+				display: inline-block; /* div의 자식 p */
+				position: absolute; /* 절대 배치 */
+				height: 40px;
+				width: 35px;
+				color:white;
+				text-shadow:5px 5px black;
+			}
+			#M2:hover{
+				transform:rotate(-30deg);
+			}
+			#A{
+				z-index:31;
+				display: inline-block; /* div의 자식 p */
+				position: absolute; /* 절대 배치 */
+				height: 40px;
+				width: 35px;
+				color:white;
+				text-shadow:5px 5px black;
+			}
+			#A:hover{
+				transform:rotate(30deg);
+			}
+			#S{
+				z-index:31;
+				display: inline-block; /* div의 자식 p */
+				position: absolute; /* 절대 배치 */
+				height: 40px;
+				width: 35px;
+				color:white;
+				text-shadow:5px 5px black;
+			}
+			#S:hover{
+				transform:rotate(-30deg);
+			}
+            img {
+                position: absolute;
+            }
+			#frame{
+				z-index:10;
+				left:300px;
+				top:10px;
+			}
+			#tree{
+				z-index: 4;
+				left: 630px;
+               	 top: 360px;
+			}
+			#snowbackground{
+            	z-index:-8;
+               	 left: 310px;
+               	 top: 430px;
+			}
+			#background{
+            	z-index:-10;
+               	 left: 350px;
+               	 top: 120px;
+			}
+			#bolb{
+            	z-index:6;
+               	 left: 715px;
+               	 top: 485px;
+			}
+			#bolb2{
+            	z-index:6;
+               	 left: 700px;
+               	 top: 565px;
+			}
+			#bolb3{
+            	z-index:6;
+               	 left: 675px;
+               	 top: 670px;
+			}
+			#santa{
+				
+            	z-index:11;
+               	 left: 920px;
+               	 top: 250px;
+			}
+			#santa:active{
+				transform:translate(70px,-50px);
+			}
+			#bear{
+            	z-index:-7;
+               	 left: 950px;
+               	 top: 650px;
+			}
+			#snowman{
+            	z-index:-7;
+               	 left: 400px;
+               	 top: 660px;
+			}
+			#hat{
+            	z-index:-6;
+               	 left: 1060px;
+               	 top: 650px;
+			}
+			#gift{
+            	z-index:-6;
+               	 left: 460px;
+               	 top: 690px;
+			}
+			#gift2{
+            	z-index:-6;
+               	 left: 420px;
+               	 top: 260px;
+			}
+			#circle{
+            	z-index:5;
+               	 left: 755px;
+               	 top: 430px;
+			}
+			#socks{
+            	z-index:3;
+               	 left: 365px;
+               	 top: 430px;
+			}
+			#socks2{
+            	z-index:3;
+               	 left: 845px;
+               	 top: 430px;
+			}
+			#ball{
+            	z-index:5;
+               	 left: 685px;
+               	 top: 800px;
+			}
+		</style>
+		<script></script>
+	</head>
+
+	<body>
+		<img id="tree"src="media/christmastree.png"
+		width="350" height="500"alt="크리스마스 트리">
+		</p>
+		
+		<div>
+			<img id="bolb"src="media/bolb.png"
+          	 	 width="170" height="100" alt="전구1">
+			<img id="bolb2"src="media/bolb.png"
+          		  width="205" height="100" alt="전구2">
+			<img id="bolb3"src="media/bolb.png"
+          	 	 width="260" height="100" alt="전구3">	
+			<img id="frame"src="media/frame1.png"
+          	 	 width="1000" height="1000" alt="프레임">
+			<img id="snowbackground"src="media/snow background.png"
+				width="1000" height="500" alt="눈 배경">
+            <img id="background"src="media/night.png"
+            	width="900" height="900" alt="밤 배경">
+			<img id="santa"src="media/santa1.png"
+            	width="150" height="150" alt="산타">
+			<img id="bear"src="media/bear.png"
+            	width="250" height="250" alt="북극곰">
+			<img id="snowman"src="media/snowman.png"
+            	width="130" height="150" alt="눈사람">
+			<img id="hat"src="media/santahat.png"
+            	width="120" height="80" alt="산타모자">
+			<img id="gift"src="media/gift.png"
+            	width="200" height="200" alt="선물">
+			<img id="gift2"src="media/gift2.png"
+            	width="50" height="50" alt="선물2">
+			<img id="circle"src="media/circle.png"
+            	width="100" height="100" alt="동그라미 장식">
+			<img id="socks"src="media/socks.png"
+            	width="400" height="150" alt="양말">
+			<img id="socks2"src="media/socks.png"
+            	width="400" height="150" alt="양말">
+			<img id="ball"src="media/ball.png"
+            	width="90" height="90" alt="공">
+		</p>
+
+		<h2><p id="HM"style="left:1050px;top:890px;">
+			HM19 장원일
+		</p></h2>
+		<h1>
+		<p id="M"style="left:490px;top:220px;">
+			M
+		</p>
+		<p id="E"style="left:540px;top:200px">
+			E
+		</p>
+		<p id="R"style="left:580px;top:210px">
+			R
+		</p>
+		<p id="R2"style="left:630px; top:240px">
+			R
+		</p>
+		<p id="Y"style="left:670px; top:270px">
+			Y
+		</p>
+		<p id="X"style="left:720px; top:240px">
+			X
+		</p>
+		<p id="ba"style="left:760px; top:220px">
+			-
+		</p>
+		<p id="M2"style="left:800px; top:210px">
+			M
+		</p>
+		<p id="A"style="left:850px; top:230px">
+			A
+		</p>
+		<p id="S"style="left:880px; top:270px">
+			S
+		</p>
+		
+	<audio src="media/jingle bell.mp3"controls autoplay loop>
+		</audio>
+		</h1>
+	</body>
+
+</html>
+
